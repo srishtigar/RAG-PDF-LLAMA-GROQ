@@ -76,7 +76,10 @@ HF_TOKEN=your_huggingface_token
 1. PDFs → Chunked → Vectorized (FAISS)
 2. User question → Finds relevant text chunks
 3. LLaMA3 generates answer from context
-   
+
+```   
+PDFs → Text Chunks → Vector Database → Question → Relevant Chunks → LLM Answer → Display Results
+```
 ## + Folder Structure
 
 ```
