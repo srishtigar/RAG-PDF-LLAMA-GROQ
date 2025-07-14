@@ -54,12 +54,28 @@ huggingface_hub
 
 ```bash
 pip install -r requirements.txt
-'''
+
 
 + Environment Variables Setup
 Create a .env file in the root directory with your keys:
 OPENAI_API_KEY=your_openai_key
 GROQ_API_KEY=your_groq_key
 HF_TOKEN=your_huggingface_token
+
+.env
+
++ Folder Structure
+project-root/
+│
+├── app.py                 # Main Streamlit application
+├── requirements.txt       # Python dependencies
+├── .gitignore             # Ignore sensitive files
+├── .env                   # API keys (should NOT be pushed)
+├── rag_pdf_groq.png       # Screenshot/demo image
+├── research_papers/       # Folder of input PDFs
+│   ├── LLM.pdf
+│   └── Attention.pdf
+
+
 
 
