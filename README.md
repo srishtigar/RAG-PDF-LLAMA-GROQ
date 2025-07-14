@@ -72,7 +72,7 @@ HF_TOKEN=your_huggingface_token
 .env
 ```
 
-## How It Works
+## + How It Works
 1. PDFs → Chunked → Vectorized (FAISS)
 2. User question → Finds relevant text chunks
 3. LLaMA3 generates answer from context
@@ -93,7 +93,7 @@ project-root/
 ```
 
 
-Access the app at: 
+ Access the app at: 
 ```
 http://localhost:8501 after launching
 ```
