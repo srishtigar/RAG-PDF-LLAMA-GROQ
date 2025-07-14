@@ -5,15 +5,13 @@ Built using **LangChain**, **FAISS**, **HuggingFace Embeddings**, **Groq’s LLa
 
 ---
 
-## + Features
+## + Key Features
+- Processes PDF documents from research_papers folder
+- Uses HuggingFace embeddings for document vectorization
+- Implements FAISS for efficient similarity search
+- Powered by Groq's LLaMA3 model for responses
+- Simple Streamlit web interface
 
-- Semantic search across multiple PDFs
-- Vector-based embeddings with HuggingFace
-- Contextual responses using Groq’s LLaMA3 model
-- Streamlit interface for user interaction
-- Document similarity context viewer
-
----
 
 ## + Requirements
 langchain
@@ -49,22 +47,39 @@ pytube
 numexpr
 huggingface_hub
 
+## +Technical Stack
+- LangChain (RAG pipeline)
+- HuggingFace (embeddings)
+- FAISS (vector storage)
+- Groq (LLaMA3 LLM)
+- Streamlit (UI)
 
 ### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
 
 
-+ Environment Variables Setup
+
+## + Environment Variables Setup
 Create a .env file in the root directory with your keys:
+```
 OPENAI_API_KEY=your_openai_key
 GROQ_API_KEY=your_groq_key
 HF_TOKEN=your_huggingface_token
 
 .env
+```
 
-+ Folder Structure
+## How It Works
+1. PDFs → Chunked → Vectorized (FAISS)
+2. User question → Finds relevant text chunks
+3. LLaMA3 generates answer from context
+   
+## + Folder Structure
+
+```
 project-root/
 │
 ├── app.py                 # Main Streamlit application
@@ -75,6 +90,13 @@ project-root/
 ├── research_papers/       # Folder of input PDFs
 │   ├── LLM.pdf
 │   └── Attention.pdf
+```
+
+
+Access the app at: 
+```
+http://localhost:8501 after launching
+```
 
 
 
