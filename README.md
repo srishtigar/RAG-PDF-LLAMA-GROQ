@@ -97,7 +97,7 @@ Access the app at:
 ```
 http://localhost:8501 after launching
 ```
-
+![App Screenshot](rag_pdf_groq.png)
 
 
 
